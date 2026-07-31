@@ -1,18 +1,25 @@
 import streamlit as st
 
-# Configuración del título de la pestaña
-st.set_page_config(page_title="30 de Julio - Especial para Ti", layout="centered")
+# Título de la pestaña en el navegador del celular
+st.set_page_config(page_title="30 de Julio", layout="centered")
 
-# Título de la aplicación en la pantalla
-st.title("30 de Julio - Especial para Ti")
+# Título principal idéntico a tu ventana original
+st.title("30 de Julio")
 
-# Botón interactivo (Función del botón sorpresa)
+# Texto sincero antes de revelar la sorpresa
+st.write("Te he hecho este detalle aunque sé que es cutre y malísimo hecho, te lo he hecho porque nunca te olvidas de mí, me alegras los días y me has sacado risas, eres increíble la verdad y perdón por un detalle tan mierda.")
+
+# El botón sorpresa tal cual lo programaste
 if st.button("mostrar_sorpresa"):
-    # Cuadro de información con tus mensajes originales exactos
-    st.info("""
-    🔓 ACCESO CONCEDIDO
+    # Texto inicial dentro de la sorpresa
+    st.write("30 de Julio - Especial para Ti")
     
-    ¡Feliz día de la amistad chinita, eres la mejor amiga que se puede tener!\\n\\n
-    No te puedes morir nunca porque me tienes que mantener y 
-    siempre que estés mal puedes acudir a mí porque me importas. 💕
-    """)
+    # Cuadro de texto con el formato y contenido exactos de tu código original
+    st.code("""
+🔓 ACCESO CONCEDIDO
+
+¡Feliz día de la amistad chinita, eres la mejor amiga que se puede tener!
+
+No te puedes morir nunca porque me tienes que mantener y 
+siempre que estés mal puedes acudir a mí porque me importas.
+""", language="")
