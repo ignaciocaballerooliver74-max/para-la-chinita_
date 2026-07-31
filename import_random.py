@@ -1,39 +1,41 @@
 import streamlit as st
 
-# Configuración básica de la página para móviles
-st.set_page_config(page_title="30 de Julio", layout="centered")
+# Título de la pestaña en el móvil
+st.set_page_config(page_title="30 de Julio", page_icon="✨", layout="centered")
 
-# Título principal limpio y estilizado
-st.markdown("<h1 style='text-align: center; font-weight: bold;'>30 de Julio</h1>", unsafe_html=True)
+# Encabezado principal
+st.title("🌟 30 de Julio")
 st.markdown("---")
 
-# Nota introductoria en un bloque de texto limpio y elegante
-st.markdown(
-    "*Te he hecho este detalle aunque sé que es cutre y malísimo hecho, "
-    "te lo he hecho porque nunca te olvidas de mí, me alegras los días y me has "
-    "sacado risas, eres increíble la verdad y perdón por un detalle tan mierda.*"
-)
+# Tarjeta elegante nativa para tu mensaje sincero
+with st.chat_message("user", avatar="💡"):
+    st.markdown(
+        "***Te he hecho este detalle aunque sé que es cutre y malísimo hecho, "
+        "te lo he hecho porque nunca te olvidas de mí, me alegras los días y me has "
+        "sacado risas, eres increíble la verdad y perdón por un detalle tan mierda.***"
+    )
 
-st.write("")  # Espacio en blanco de separación
+st.write("") # Espacio de separación en la pantalla
 
-# Botón de acción principal adaptado al ancho de la pantalla del celular
-if st.button("Mostrar Sorpresa", type="primary", use_container_width=True):
+# Botón interactivo grande para el móvil
+if st.button("✨ Mostrar Sorpresa ✨", type="primary", use_container_width=True):
     
     st.markdown("---")
     
-    # Subtítulo de la sección de la sorpresa
-    st.markdown("<h3 style='text-align: center;'>30 de Julio - Especial para Ti</h3>", unsafe_html=True)
+    # Cuadro destacado con el subtítulo
+    st.warning("⚡ 30 de Julio - Especial para Ti")
     
-    # Mensaje de confirmación en un recuadro verde minimalista
-    st.success("ACCESO CONCEDIDO")
+    # Mensaje de éxito verde
+    st.success("🔓 ACCESO CONCEDIDO")
     
-    # Mensajes originales organizados con una tipografía clara y sin emojis
+    # Cuerpo de la sorpresa limpio y ordenado con markdown
     st.markdown("""
-    ### ¡Feliz día de la amistad chinita!
+    ### 💕 ¡Feliz día de la amistad chinita!
     *Eres la mejor amiga que se puede tener.*
     
     ---
     
-    **No te puedes morir nunca** porque me tienes que mantener y 
-    siempre que estés mal **puedes acudir a mí** porque me importas.
+    🫩​ ***No te puedes morir nunca*** porque me tienes que mantener...
+    
+    ❤️ Y siempre que estés mal ***puedes acudir a mí*** porque me importas.
     """)
